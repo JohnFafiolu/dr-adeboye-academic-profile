@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123d35">
+  <meta name="description" content="Official academic profile of Dr. Nureni Olawale Adeboye, Head of the Department of Statistics at Osun State University, Nigeria.">
+  <meta name="author" content="Dr. Nureni Olawale Adeboye">
+  <title>Dr. Nureni Olawale Adeboye | Head, Department of Statistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #123d35;
+      --green-2: #1c5b4d;
+      --green-3: #dcebe4;
+      --gold: #b88b4a;
+      --ink: #1c2925;
+      --muted: #66736d;
+      --paper: #f7f6f1;
+      --white: #fff;
+      --line: #e4e7df;
+      --soft: #eef2ec;
+      --shadow: 0 18px 55px rgba(22, 48, 39, .09);
+      --radius: 18px;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "DM Sans", sans-serif; line-height: 1.7; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .container { width: min(var(--max), calc(100% - 44px)); margin-inline: auto; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 700; }
+    h1,h2,h3,h4 { font-family: "Playfair Display", Georgia, serif; line-height: 1.2; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin: .45rem 0 1rem; color: var(--green); }
+    h3 { color: var(--green); }
+    p { margin: 0 0 1rem; }
+    .muted { color: var(--muted); }
+    .section { padding: 92px 0; }
+    .section-head { max-width: 720px; margin-bottom: 38px; }
+    .section-head p { color: var(--muted); max-width: 680px; }
+    .topbar { position: sticky; top: 0; z-index: 50; background: rgba(247,246,241,.94); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(228,231,223,.9); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { text-decoration: none; display: flex; align-items: center; gap: 12px; color: var(--green); font-weight: 700; line-height: 1.2; }
+    .brand-mark { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: white; background: var(--green); font-family: "Playfair Display", serif; font-size: 1.05rem; }
+    .brand small { display: block; color: var(--muted); font-size: .68rem; font-weight: 500; margin-top: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 22px; }
+    .nav-links a { text-decoration: none; color: #43534c; font-size: .84rem; font-weight: 600; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta,.btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 999px; padding: 12px 19px; font-weight: 700; text-decoration: none; font-size: .88rem; transition: .2s ease; }
+    .nav-cta,.btn-primary { background: var(--green); color: white; border: 1px solid var(--green); }
+    .nav-cta:hover,.btn-primary:hover { background: var(--green-2); transform: translateY(-2px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.55); color: white; }
+    .btn-outline:hover { background: white; color: var(--green); }
+    .menu-toggle { display: none; border: 1px solid var(--line); border-radius: 10px; background: white; padding: 9px 12px; color: var(--green); font-size: 1.1rem; cursor: pointer; }
+    .hero { background: var(--green); color: white; overflow: hidden; position: relative; }
+    .hero:before { content:""; position:absolute; width:560px; height:560px; border:1px solid rgba(255,255,255,.09); border-radius:50%; right:-170px; top:-260px; box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02); }
+    .hero-grid { min-height: 620px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 60px; padding: 76px 0 88px; position: relative; z-index: 1; }
+    .hero .eyebrow { color: #d7b77f; }
+    .hero h1 { font-size: clamp(2.8rem, 5.5vw, 5.2rem); letter-spacing: -.035em; margin: 18px 0 14px; max-width: 720px; }
+    .hero h1 span { color: #d8bd8c; }
+    .hero-role { color: #e4eee9; font-size: 1.06rem; font-weight: 600; margin-bottom: 8px; }
+    .hero-org { color: #b9cdc4; margin-bottom: 26px; }
+    .hero-copy { color: #d2dfd9; max-width: 640px; font-size: 1.02rem; margin-bottom: 30px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-photo-wrap { justify-self: end; width: min(100%, 390px); position: relative; }
+    .hero-photo { aspect-ratio: 4/5; width: 100%; border-radius: 190px 190px 22px 22px; overflow: hidden; background: #e6e5dc; border: 8px solid rgba(255,255,255,.12); box-shadow: 0 25px 70px rgba(0,0,0,.2); }
+    .hero-photo img { width:100%; height:100%; object-fit:cover; display:block; }
+    .photo-placeholder { width:100%; height:100%; display:grid; place-items:center; text-align:center; color:#5a6a61; padding:28px; background:linear-gradient(145deg,#e8e9df,#cbd8cf); }
+    .photo-placeholder strong { display:block; font-family:"Playfair Display",serif; font-size:1.4rem; color:var(--green); }
+    .photo-placeholder span { font-size:.82rem; }
+    .photo-caption { position:absolute; bottom:22px; left:-36px; max-width:240px; padding:16px 19px; border-radius:14px; background:#fff; color:var(--green); box-shadow:var(--shadow); font-size:.82rem; }
+    .photo-caption strong { display:block; font-family:"Playfair Display",serif; font-size:1.05rem; margin-bottom:3px; }
+    .stats-band { background:#fff; border-bottom:1px solid var(--line); }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); }
+    .stat { padding:27px 20px; border-right:1px solid var(--line); }
+    .stat:first-child { padding-left:0; }
+    .stat:last-child { border:0; }
+    .stat strong { display:block; color:var(--green); font-family:"Playfair Display",serif; font-size:2rem; line-height:1.1; }
+    .stat span { color:var(--muted); font-size:.78rem; }
+    .two-col { display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:start; }
+    .about-panel { background:white; padding:34px; border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+    .about-panel h3 { margin-top:0; font-size:1.45rem; }
+    .tag-list { display:flex; flex-wrap:wrap; gap:9px; margin-top:22px; }
+    .tag { display:inline-flex; padding:8px 12px; border-radius:999px; background:var(--green-3); color:var(--green); font-size:.78rem; font-weight:700; }
+    .timeline { border-left:1px solid #cbd8ce; margin-left:8px; padding-left:25px; }
+    .timeline-item { position:relative; padding:0 0 27px; }
+    .timeline-item:before { content:""; position:absolute; width:11px; height:11px; border-radius:50%; background:var(--gold); left:-31px; top:8px; box-shadow:0 0 0 5px var(--paper); }
+    .timeline-item strong { display:block; color:var(--green); }
+    .timeline-item small { color:var(--muted); }
+    .soft-section { background:#eef1eb; }
+    .research-grid,.card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .info-card { background:white; border:1px solid var(--line); border-radius:16px; padding:25px; transition:transform .2s,box-shadow .2s; }
+    .info-card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+    .card-icon { width:42px; height:42px; border-radius:13px; display:grid; place-items:center; background:var(--green-3); color:var(--green); font-size:1.15rem; margin-bottom:18px; }
+    .info-card h3 { font-size:1.25rem; margin:0 0 9px; }
+    .info-card p { color:var(--muted); font-size:.9rem; margin:0; }
+    .research-project { background:var(--green); color:white; border-radius:var(--radius); padding:30px; margin-top:24px; display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; }
+    .research-project h3 { color:white; font-size:1.4rem; margin:7px 0; }
+    .research-project p { color:#c8d8d0; margin:0; }
+    .research-project .eyebrow { color:#d7b77f; }
+    .project-label { color:#e8d4af; font-weight:700; font-size:.8rem; white-space:nowrap; }
+    .education-list { display:grid; gap:12px; }
+    .education-item { display:grid; grid-template-columns:90px 1fr; gap:20px; padding:20px 0; border-bottom:1px solid var(--line); }
+    .education-year { color:var(--gold); font-weight:700; font-size:.85rem; }
+    .education-item h3 { margin:0 0 5px; font-size:1.1rem; }
+    .education-item p { margin:0; color:var(--muted); font-size:.88rem; }
+    .publication-section { background:#fff; }
+    .pub-toolbar { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:22px; }
+    .pub-search { flex:1; min-width:230px; padding:13px 16px; border:1px solid var(--line); border-radius:10px; font:inherit; outline:none; }
+    .pub-search:focus { border-color:var(--green-2); box-shadow:0 0 0 3px rgba(28,91,77,.1); }
+    .pub-filter { padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:white; color:var(--green); font:inherit; font-size:.86rem; }
+    .pub-count { color:var(--muted); font-size:.83rem; margin-bottom:14px; }
+    .pub-list { display:grid; gap:12px; }
+    .pub-item { padding:19px 21px; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:0 12px 12px 0; background:#fff; }
+    .pub-item h3 { margin:0 0 7px; font:600 1rem/1.5 "DM Sans",sans-serif; color:var(--ink); }
+    .pub-item p { color:var(--muted); font-size:.84rem; margin:0; }
+    .pub-type { display:inline-block; color:var(--green-2); background:var(--green-3); padding:3px 8px; border-radius:999px; font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px; }
+    .pub-item a { color:var(--green-2); font-weight:700; text-decoration:none; }
+    .pub-item a:hover { text-decoration:underline; }
+    .empty-state { padding:28px; background:var(--soft); color:var(--muted); border-radius:12px; text-align:center; display:none; }
+    .teaching-layout { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    .course-panel { background:white; border:1px solid var(--line); border-radius:16px; padding:27px; }
+    .course-panel h3 { margin:0 0 17px; font-size:1.35rem; }
+    .course-list { display:grid; grid-template-columns:1fr 1fr; gap:9px; list-style:none; padding:0; margin:0; }
+    .course-list li { background:var(--soft); padding:10px 12px; border-radius:8px; font-size:.81rem; }
+    .course-list b { color:var(--green); display:block; font-size:.72rem; }
+    .supervision-band { background:var(--green); color:white; border-radius:var(--radius); padding:34px; display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:center; }
+    .supervision-band h3 { color:white; font-size:1.65rem; margin:0 0 10px; }
+    .supervision-band p { color:#cbdad3; margin:0; }
+    .supervision-numbers { display:flex; gap:22px; justify-content:flex-end; }
+    .supervision-numbers strong { display:block; font:600 2.8rem "Playfair Display",serif; color:#e1c28f; }
+    .supervision-numbers span { color:#d2dfd9; font-size:.8rem; }
+    .grant-list { display:grid; gap:15px; }
+    .grant { padding:22px 24px; border:1px solid var(--line); background:white; border-radius:13px; }
+    .grant h3 { margin:0 0 7px; font-size:1.08rem; }
+    .grant p { color:var(--muted); font-size:.87rem; margin:0; }
+    .grant .grant-meta { color:var(--gold); font-size:.75rem; font-weight:700; margin-bottom:7px; }
+    .service-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .service-card { background:white; border:1px solid var(--line); border-radius:15px; padding:25px; }
+    .service-card h3 { margin:0 0 14px; font-size:1.25rem; }
+    .service-card ul { padding-left:19px; margin:0; color:var(--muted); font-size:.88rem; }
+    .service-card li { margin:0 0 9px; }
+    .membership-chips { display:flex; flex-wrap:wrap; gap:10px; }
+    .membership-chips span { padding:10px 14px; border:1px solid var(--line); background:white; border-radius:999px; color:var(--green); font-weight:600; font-size:.82rem; }
+    .contact-section { background:var(--green); color:white; }
+    .contact-section h2 { color:white; }
+    .contact-section .section-head p { color:#cbdad3; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:35px; align-items:start; }
+    .contact-box { border:1px solid rgba(255,255,255,.18); border-radius:16px; padding:26px; background:rgba(255,255,255,.06); }
+    .contact-box h3 { color:white; margin:0 0 12px; }
+    .contact-box a { color:#e7c995; text-decoration:none; overflow-wrap:anywhere; }
+    .contact-box a:hover { text-decoration:underline; }
+    .profile-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:17px; }
+    .profile-links a { border:1px solid rgba(255,255,255,.25); padding:9px 13px; border-radius:999px; font-size:.8rem; }
+    footer { background:#0c2c27; color:#aebfb7; padding:25px 0; font-size:.8rem; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .back-top { color:#e7c995; text-decoration:none; }
+    .disclaimer { font-size:.76rem; color:#819188; margin-top:10px; }
+    @media(max-width:900px) {
+      .nav-links { gap:13px; }
+      .nav-links a { font-size:.78rem; }
+      .hero-grid { gap:30px; }
+      .research-grid,.card-grid { grid-template-columns:repeat(2,1fr); }
+      .two-col { gap:30px; }
+    }
+    @media(max-width:720px) {
+      .container { width:min(100% - 32px,var(--max)); }
+      .menu-toggle { display:block; }
+      .nav { min-height:68px; }
+      .nav-links { display:none; position:absolute; top:68px; left:0; right:0; padding:18px 22px 22px; background:var(--paper); border-bottom:1px solid var(--line); flex-direction:column; align-items:flex-start; gap:15px; }
+      .nav-links.open { display:flex; }
+      .nav-cta { display:none; }
+      .hero-grid { grid-template-columns:1fr; padding:60px 0 65px; }
+      .hero-photo-wrap { justify-self:center; width:min(78%,330px); }
+      .photo-caption { left:-20px; }
+      .stats { grid-template-columns:repeat(2,1fr); }
+      .stat:nth-child(2) { border-right:0; }
+      .stat:nth-child(1),.stat:nth-child(2) { border-bottom:1px solid var(--line); }
+      .stat:nth-child(3) { padding-left:0; }
+      .section { padding:68px 0; }
+      .two-col,.teaching-layout,.contact-grid,.service-grid,.supervision-band { grid-template-columns:1fr; }
+      .research-grid,.card-grid { grid-template-columns:1fr; }
+      .supervision-numbers { justify-content:flex-start; }
+      .research-project { grid-template-columns:1fr; }
+      .project-label { white-space:normal; }
+      .course-list { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:430px) {
+      .hero h1 { font-size:2.7rem; }
+      .education-item { grid-template-columns:1fr; gap:3px; }
+      .course-list { grid-template-columns:1fr; }
+      .about-panel { padding:24px; }
+      .supervision-numbers { gap:16px; }
+      .supervision-numbers strong { font-size:2.2rem; }
+    }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Dr Adeboye homepage">
+      <span class="brand-mark">NA</span>
+      <span>DR. N. O. ADEBOYE<small>STATISTICIAN · DATA SCIENTIST</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a>
+      <a href="#publications">Publications</a><a href="#teaching">Teaching</a>
+      <a href="#leadership">Leadership</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:nureni.adeboye@uniosun.edu.ng">Contact</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Academic Profile · Osun State University</div>
+      <h1>Dr. Nureni Olawale <span>Adeboye</span></h1>
+      <p class="hero-role">Head, Department of Statistics</p>
+      <p class="hero-org">Faculty of Basic and Applied Sciences · Osun State University, Osogbo, Nigeria</p>
+      <p class="hero-copy">A Statistician and Data Scientist whose work brings together statistical modelling, econometrics, official statistics and machine learning. His academic practice is informed by research, teaching, professional service and experience across the financial and higher-education sectors.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research">Explore research <span>↗</span></a>
+        <a class="btn btn-outline" href="#publications">View publications</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Portrait of Dr. Nureni Olawale Adeboye" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="photo-placeholder" style="display:none"><div><strong>Dr. N. O. Adeboye</strong><span>Add his portrait as assets/profile.jpg</span></div></div>
+      </div>
+      <div class="photo-caption"><strong>Academic leadership & research</strong>Department of Statistics, Osun State University</div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-band">
+  <div class="container stats">
+    <div class="stat"><strong>PhD</strong><span>Statistics · 2018</span></div>
+    <div class="stat"><strong>60+</strong><span>Journal articles and scholarly outputs listed in CV</span></div>
+    <div class="stat"><strong>18+</strong><span>Years of teaching, research and professional experience (CV summary)</span></div>
+    <div class="stat"><strong>IAOS</strong><span>Sub-Saharan African representative, Executive Committee</span></div>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="container two-col">
+    <div>
+      <div class="eyebrow">About the scholar</div>
+      <h2>Statistics for understanding complex systems and informing decisions.</h2>
+      <p>Dr. Nureni Olawale Adeboye is a Statistician and Data Scientist, and the Head of the Department of Statistics at Osun State University, Osogbo, Nigeria. He holds National Diploma and Higher National Diploma qualifications in Statistics, a Bachelor of Science degree in Statistics, a Master of Science degree in Statistics, a Postgraduate Diploma in Planning, Research and Statistics, and a PhD in Statistics.</p>
+      <p>His professional experience spans banking operations, university and polytechnic teaching, research supervision, academic administration, statistical consulting and editorial service. He has taught at undergraduate, postgraduate and professional levels and has contributed to research projects and scholarly discussions in Nigeria and internationally.</p>
+      <p>His research interests include panel data econometrics, time-series econometrics, official statistics, operations research, machine learning, bioinformatics and geospatial analysis.</p>
+      <div class="tag-list">
+        <span class="tag">Statistical Modelling</span><span class="tag">Panel Data Econometrics</span>
+        <span class="tag">Time Series</span><span class="tag">Official Statistics</span>
+        <span class="tag">Machine Learning</span><span class="tag">Data Science</span>
+      </div>
+    </div>
+    <aside class="about-panel">
+      <div class="eyebrow">Professional journey</div>
+      <h3>Academic and industry experience</h3>
+      <div class="timeline">
+        <div class="timeline-item"><strong>Head, Department of Statistics</strong><small>Osun State University · Current designation</small></div>
+        <div class="timeline-item"><strong>Senior Lecturer</strong><small>Osun State University · 2025–present (CV)</small></div>
+        <div class="timeline-item"><strong>Lecturer I</strong><small>Osun State University · 2022–2025</small></div>
+        <div class="timeline-item"><strong>Lecturer</strong><small>Federal University Oye-Ekiti (affiliate programme) · 2020–2022</small></div>
+        <div class="timeline-item"><strong>Lecturer</strong><small>National Open University of Nigeria, Abeokuta Study Centre · 2019–2021</small></div>
+        <div class="timeline-item"><strong>Senior Lecturer</strong><small>Federal Polytechnic, Ilaro · Jan–Apr 2022</small></div>
+        <div class="timeline-item"><strong>Banking operations and management</strong><small>Ojodu Abiodun Community Bank · 1999–2006; Combined Benefit MF Bank · 2006–2007</small></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section soft-section" id="research">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Research profile</div><h2>Research interests & current work</h2><p>His research engages statistical theory and applied methods to investigate economic, social, health and environmental questions.</p></div>
+    <div class="research-grid">
+      <article class="info-card"><div class="card-icon">∑</div><h3>Panel Data Econometrics</h3><p>Dynamic panel models, heterogeneity, heteroscedasticity, periodicity and econometric approaches to economic and institutional data.</p></article>
+      <article class="info-card"><div class="card-icon">⌁</div><h3>Time-Series Econometrics</h3><p>Forecasting, long-memory processes, volatility modelling, ARIMA-family methods and the analysis of temporal patterns.</p></article>
+      <article class="info-card"><div class="card-icon">▦</div><h3>Official Statistics</h3><p>Statistical systems, data production and use, big data, statistical capacity and evidence for public policy.</p></article>
+      <article class="info-card"><div class="card-icon">◇</div><h3>Machine Learning & Data Science</h3><p>Predictive modelling, classification, data-driven methods and the application of machine learning to real-world problems.</p></article>
+      <article class="info-card"><div class="card-icon">⌖</div><h3>Geospatial & Environmental Statistics</h3><p>Spatial and spatio-temporal analysis of health, ecological and environmental risk patterns.</p></article>
+      <article class="info-card"><div class="card-icon">＋</div><h3>Biostatistics & Survival Analysis</h3><p>Statistical modelling of disease patterns, survival outcomes and public-health questions.</p></article>
+    </div>
+    <div class="research-project">
+      <div><div class="eyebrow">Funded research · Lead researcher</div><h3>Optimizing Diabetes Mellitus Detection Through a Web-Based Machine Learning Application for Timely Medical Intervention</h3><p>Institutional Based Research Grant, Tertiary Education Trust Fund (TETFund), Osun State University.</p></div>
+      <div class="project-label">TETFund-supported research</div>
+    </div>
+    <div class="research-project" style="background:#254f45">
+      <div><div class="eyebrow">Current research activity</div><h3>Mapping the Vulnerability of Malaria and Cholera to the Climatic Change Effects in South-West Nigeria</h3><p>Listed in the CV as a current, non-funded research activity.</p></div>
+      <div class="project-label">Environmental & health statistics</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="container two-col">
+    <div>
+      <div class="eyebrow">Academic formation</div><h2>Education & qualifications</h2>
+      <p class="muted">A multidisciplinary academic pathway built on formal training in Statistics, planning, research and data science.</p>
+    </div>
+    <div class="education-list">
+      <div class="education-item"><div class="education-year">2018</div><div><h3>Doctor of Philosophy (PhD), Statistics</h3><p>Olabisi Onabanjo University, Ago-Iwoye</p></div></div>
+      <div class="education-item"><div class="education-year">2016</div><div><h3>Bachelor of Science (B.Sc.), Statistics — Upper Division</h3><p>University of Ibadan</p></div></div>
+      <div class="education-item"><div class="education-year">2012</div><div><h3>Master of Science (M.Sc.), Statistics</h3><p>Olabisi Onabanjo University, Ago-Iwoye</p></div></div>
+      <div class="education-item"><div class="education-year">2011</div><div><h3>Postgraduate Diploma, Planning, Research & Statistics — Distinction</h3><p>Federal University of Agriculture, Abeokuta</p></div></div>
+      <div class="education-item"><div class="education-year">1997</div><div><h3>Higher National Diploma (HND), Statistics — Upper Credit</h3><p>Yaba College of Technology, Lagos</p></div></div>
+      <div class="education-item"><div class="education-year">1992</div><div><h3>National Diploma (ND), Statistics — Upper Credit</h3><p>The Polytechnic, Ibadan</p></div></div>
+      <div class="education-item"><div class="education-year">2020</div><div><h3>Data Scientist’s Toolbox Certificate</h3><p>Coursera · Johns Hopkins University</p></div></div>
+      <div class="education-item"><div class="education-year">2014</div><div><h3>Certificate of Computer Proficiency</h3><p>University of Ibadan</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section publication-section" id="publications">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Research contributions</div><h2>Selected publications & scholarly outputs</h2><p>Search the publication record by title, year, journal or keyword. The list below is drawn from the supplied CV; links are provided where a DOI or stable article URL was available in the document.</p></div>
+    <div class="pub-toolbar">
+      <input class="pub-search" id="pubSearch" type="search" placeholder="Search publications, authors, journals or keywords..." aria-label="Search publications">
+      <select class="pub-filter" id="pubYear" aria-label="Filter by year"><option value="all">All years</option></select>
+      <select class="pub-filter" id="pubType" aria-label="Filter by type"><option value="all">All publication types</option><option value="journal">Journal articles</option><option value="chapter">Book chapters</option><option value="proceedings">Conference proceedings</option><option value="dataset">Datasets</option></select>
+    </div>
+    <div class="pub-count" id="pubCount" aria-live="polite"></div>
+    <div class="pub-list" id="pubList"></div>
+    <div class="empty-state" id="pubEmpty">No publications match your search. Try another keyword or year.</div>
+  </div>
+</section>
+
+<section class="section soft-section" id="teaching">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Teaching & learning</div><h2>Teaching experience</h2><p>Dr. Adeboye’s teaching spans core statistical theory, applied statistics, econometrics, time-series analysis and advanced postgraduate methods.</p></div>
+    <div class="teaching-layout">
+      <div class="course-panel"><h3>Undergraduate courses</h3><ul class="course-list">
+        <li><b>STA 403</b>Statistical Inference IV</li><li><b>STA 313</b>Statistical Inference III</li>
+        <li><b>STA 203</b>Statistical Inference II</li><li><b>STA 407</b>Time Series Analysis</li>
+        <li><b>STA 413</b>Multivariate Methods</li><li><b>STA 106</b>Statistical Inference I</li>
+        <li><b>STA 201</b>Statistics for Physical Sciences & Engineering</li><li><b>STA 204</b>Introduction to Social & Economic Statistics</li>
+        <li><b>STA 306</b>Survey Methods & Sampling Theory</li><li><b>STA 209</b>Statistics for Biological Sciences</li>
+        <li><b>STA 308</b>Survey Methods Laboratory / Field Work</li><li><b>STA 412</b>Econometrics</li>
+        <li><b>STA 406</b>Logical Background of Statistics & Decision-Making</li><li><b>STA 312</b>Distribution Theory I</li>
+      </ul></div>
+      <div class="course-panel"><h3>Postgraduate courses</h3><ul class="course-list">
+        <li><b>MCB 707</b>Biostatistics</li><li><b>STA 701</b>Statistical Inference</li>
+        <li><b>STA 711</b>Time Series</li><li><b>STA 702</b>Categorical Data Analysis</li>
+        <li><b>STA 707</b>Advanced Statistical Methods I</li><li><b>STA 710</b>Advanced Statistical Methods II</li>
+        <li><b>STA 714</b>Econometrics</li><li><b>STA 901</b>Advanced Statistical Inference</li>
+        <li><b>STA 903</b>Advanced Econometrics Methods</li>
+      </ul></div>
+    </div>
+    <div class="supervision-band" style="margin-top:24px">
+      <div><h3>Research supervision & mentorship</h3><p>Supervision of undergraduate and postgraduate research across statistical modelling, econometrics, machine learning, epidemiology, public health and related applied fields.</p></div>
+      <div class="supervision-numbers"><div><strong>11</strong><span>B.Sc. students</span></div><div><strong>7</strong><span>M.Sc. students</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="grants">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Research support & recognition</div><h2>Grants, awards & distinctions</h2><p>Selected research funding, travel support and professional recognition recorded in the curriculum vitae.</p></div>
+    <div class="grant-list">
+      <article class="grant"><div class="grant-meta">TETFund · Institutional Based Research Grant · Lead researcher</div><h3>Optimizing Diabetes Mellitus Detection Through a Web-Based Machine Learning Application</h3><p>Funded under the TETFund Institutional Based Research intervention at Osun State University.</p></article>
+      <article class="grant"><div class="grant-meta">US$5,120 · United Nations Statistics Division · 2024</div><h3>Travel grant to the 2024 IAOS–ISI Training and Conference</h3><p>Support to attend the conference and training programme in Mexico City, 14–17 May 2024.</p></article>
+      <article class="grant"><div class="grant-meta">€2,065 · United Nations Statistics Division · 2021</div><h3>Participation and speaker grant — 63rd World Statistics Congress</h3><p>Support for the invited paper session on “The New World Order and the Challenges of Official Statistics in Nigeria”.</p></article>
+      <article class="grant"><div class="grant-meta">TETFund · Research Batch 7 · 2020 · Lead researcher</div><h3>Survival Assessment of Asthmatic Patients Using Parametric and Semi-Parametric Survival Models</h3><p>Institutional Based Research Grant, Federal Polytechnic Ilaro.</p></article>
+      <article class="grant"><div class="grant-meta">TETFund · 2010–2011 · Co-researcher</div><h3>Practical Application of Mathematical Models for Effective Teaching and Learning</h3><p>Research on the teaching and learning of science, social sciences and technology-related courses in Nigerian institutions.</p></article>
+      <article class="grant"><div class="grant-meta">Professional recognition</div><h3>Awards and distinctions</h3><p>Pillars of Nation’s Building Award, Strategic Institute for Natural Resources and Human Development; Award of Excellence, Professional Statisticians Society of Nigeria; Meritorious Awards from the National Association of Osun State Students and Federal Polytechnic Ilaro Students’ Union.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-section" id="leadership">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Academic & professional service</div><h2>Leadership, editorial work & service</h2><p>Contributions to university administration, professional statistical organisations, scholarly publishing, academic assessment and community development.</p></div>
+    <div class="service-grid">
+      <article class="service-card"><h3>University leadership & service</h3><ul>
+        <li>Head, Department of Statistics, Osun State University — current designation supplied for this website.</li>
+        <li>100- and 200-Level Adviser — 2023 to date.</li><li>Departmental Association Adviser — 2023 to date.</li>
+        <li>Departmental Project Coordinator — 2022 to date.</li><li>Departmental Laboratory Coordinator — 2022 to date.</li>
+        <li>Secretary, Departmental Quality Assurance Committee — 2022–2026.</li>
+      </ul></article>
+      <article class="service-card"><h3>Editorial & academic appointments</h3><ul>
+        <li>Associate Editor, Mathematical, Statistical & Computer Sciences, UNIOSUN Journal of Basic and Applied Sciences — 2026 to date.</li>
+        <li>Editor-in-Chief, Asia Pacific Academy of Science, Whoice Publishing and Academic Publishing — 2023 to date.</li>
+        <li>Editorial Board Member, Open Access Journal of Data Science and Artificial Intelligence.</li>
+        <li>Editorial Board Member, Ilaro Journal of Science and Technology — 2023 to date.</li>
+        <li>Editorial Board Member, International Journal of Research and Innovation in Applied Science — 2021 to date.</li>
+        <li>Editorial Board Member, International Journal of Multidisciplinary Research and Analysis — 2021 to date.</li>
+      </ul></article>
+      <article class="service-card"><h3>International and professional service</h3><ul>
+        <li>Executive Committee Member, Sub-Saharan African Representative, International Association for Official Statistics (IAOS) — 2023 to date.</li>
+        <li>Judge, IAOS Young Statistician Prize competition — 2024 to date.</li>
+        <li>External Moderator, Adeseun Ogundoyin Polytechnic, Eruwa — 2022 to date.</li>
+        <li>Member, Scientific Committee and Editorial Review Boards, World Academy of Science, Engineering and Technology.</li>
+        <li>Journal reviewer for publications including Scientific Africa, Statistical Journal of the IAOS and Statistics in Transition.</li>
+      </ul></article>
+      <article class="service-card"><h3>Professional memberships</h3><ul>
+        <li>American Statistical Association (ASA) — 2023.</li><li>Data Science Nigeria — 2020.</li>
+        <li>International Statistical Institute (ISI) — 2019.</li><li>International Association for Official Statistics (IAOS) — 2019.</li>
+        <li>Professional Statisticians Society of Nigeria (PSSN) — 2017.</li>
+        <li>Strategic Institute for Natural Resources and Human Development — 2012.</li>
+        <li>Nigerian Statistical Association (NSA) — 2011.</li>
+      </ul></article>
+    </div>
+    <div style="margin-top:28px"><div class="eyebrow">Professional affiliations</div><div class="membership-chips" style="margin-top:14px"><span>ASA</span><span>ISI</span><span>IAOS</span><span>PSSN</span><span>NSA</span><span>Data Science Nigeria</span><span>FRHD</span></div></div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Connect & collaborate</div><h2>Academic enquiries and research collaboration</h2><p>For academic correspondence, research collaboration, postgraduate enquiries, seminars and professional engagements, please use the official university email or the scholarly profiles below.</p></div>
+    <div class="contact-grid">
+      <div class="contact-box"><h3>Contact</h3><p><strong>Dr. Nureni Olawale Adeboye</strong><br>Head, Department of Statistics<br>Osun State University, Osogbo, Nigeria</p><p>Email: <a href="mailto:nureni.adeboye@uniosun.edu.ng">nureni.adeboye@uniosun.edu.ng</a></p></div>
+      <div class="contact-box"><h3>Research profiles</h3><p>Explore publications, citations, research outputs and scholarly activity.</p><div class="profile-links">
+        <a href="https://scholar.google.com/citations?user=b7oyzwEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+        <a href="https://www.researchgate.net/profile/Olawale_Adeboye" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57212675731" target="_blank" rel="noopener noreferrer">Scopus ↗</a>
+        <a href="https://www.growkudos.com/profile/nureni_olawale_adeboye" target="_blank" rel="noopener noreferrer">Kudos ↗</a>
+        <a href="https://federalpolytechnicilaro.academia.edu/NureniOlawaleAdeboye" target="_blank" rel="noopener noreferrer">Academia.edu ↗</a>
+      </div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Dr. Nureni Olawale Adeboye. All rights reserved.</span>
+    <a class="back-top" href="#home">Back to top ↑</a>
+  </div>
+  <div class="container disclaimer">Academic information on this website is based on the curriculum vitae supplied for preparation of this profile. Please verify updates, publication metadata and current appointments before public release.</div>
+</footer>
+
+<script>
+  // Mobile navigation
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+  navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  }));
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Publication data transcribed and lightly formatted from the supplied CV.
+  // Verify any inconsistent bibliographic details against the publisher before launch.
+  const publications = [
+    {year:2026,type:"journal",title:"On the estimation of the Dynamic Panel Model in the presence of heteroscedasticity.",authors:"Adeboye, N. O., Ogunnusi, O. N., Akinbo, R. Y.",venue:"Journal of Applied Sciences, Information and Computing, 7(1).",doi:"https://doi.org/10.59568/JASIC-2026-7-1-13"},
+    {year:2026,type:"journal",title:"Spatio-Temporal Dynamics of Cocoa Production in Nigeria under Climate Variability.",authors:"Adeboye, N. O., Oyalade, D. A., Akinbo, R. Y.",venue:"Adeleke University Journal of Science (AUJS), 5(1).",doi:"https://doi.org/10.66945/aujs.v5i1.360"},
+    {year:2026,type:"dataset",title:"Dataset of Clinical Survey of Diabetes Mellitus Infection Based on Some Diagnosed Symptoms in Osun State, South-Western Nigeria.",authors:"Adeboye, Nureni; Ogunleye, Timothy; Bashiru, Kehinde; Adebisi, Folashade.",venue:"Mendeley Data, V2.",doi:"https://data.mendeley.com/datasets/brzz6v9cgm/2"},
+    {year:2026,type:"journal",title:"Optimizing Productivity and Control of Market Shares in the Nigerian Real Sector through the Internet Economy.",authors:"Adeboye, N. O., Mudashiru, H., Soyemi, J.",venue:"Uniosun Journal of Basic and Applied Sciences, 1(1), 63–78."},
+    {year:2025,type:"dataset",title:"Dataset of the Vulnerability of Malaria Outbreaks in Urban and Rural Areas of South-Western Nigeria.",authors:"Adeboye, N. O., Ogunnusi, O. N., Ojo, G.",venue:"Mendeley Data, V1.",doi:"https://data.mendeley.com/datasets/f3rpj43c7z/1"},
+    {year:2025,type:"journal",title:"Measuring the Volatility of Inflation Rate in Nigeria Based on Some Exogenous Variables.",authors:"Adeboye, N. O., Ogunleye, T. A., Julius, O., Adesina, O. S., Adedotun, A., Mbata, A. U.",venue:"International Journal of Sustainable Development and Planning, 20(9), 3705–3716."},
+    {year:2025,type:"journal",title:"Bayesian and Frequentist Modelling of West African Economic Growth: A Dynamic Panel Approach.",authors:"Adeboye, N. O., Adesina, O. S.",venue:"Statistics in Transition new series, 26(3), 99–115.",doi:"https://doi.org/10.59139/stattrans-2025-029"},
+    {year:2025,type:"journal",title:"Modeling the Efficacy of Hepatitis B Vaccination in Infants and Post-vaccination Survival Analysis.",authors:"Adeboye, N. O., Adesina, O. S., Ogunleye, T. A., Obokoh, L. O.",venue:"Statistical Journal of the IAOS, 41(4), 1250–1264.",doi:"https://doi.org/10.1177/18747655251363659"},
+    {year:2025,type:"journal",title:"A Time Domain Modelling of Human Immunodeficiency Virus Infection Rate Based on Some Endogenous Variables.",authors:"Adeboye, N. O., Julius, O., Bashiru, K. A., Adedotun, A.",venue:"Scientific African, e02760.",doi:"https://doi.org/10.1016/j.sciaf.2025.e02760"},
+    {year:2025,type:"dataset",title:"Dataset of Human Immunodeficiency Virus (HIV) Infection Rate Based on Some Endogenous Variables.",authors:"Adeboye, N. O. & Julius, O.",venue:"Mendeley Data, V1.",doi:"https://data.mendeley.com/datasets/37syp7hj8n/1"},
+    {year:2024,type:"journal",title:"Advanced Principal Component Analysis of Various Risk Factors of Hepatitis B Prevalence in Nigeria.",authors:"Adeboye, N. O., Adesina, O. S., Afolabi, H. A., Ogunleye, T. A., Kolawole, M. K.",venue:"Tanzania Journal of Science, 50(3), 676–691.",doi:"https://dx.doi.org/10.4314/tjs.v50i3.21"},
+    {year:2024,type:"journal",title:"Authentication Scheme for Preventing Data Duplicate in Cloud Storage.",authors:"Hammed, M. & Adeboye, N. O.",venue:"Journal of Data Science & Artificial Intelligence, 2(1), 1–7.",doi:"https://doi.org/10.23880/oajda-16000137"},
+    {year:2024,type:"journal",title:"Sensitivity Analysis of Typhoid Fever Model with Saturated Incidence Rate.",authors:"Bashiru, K. A., Kolawole, M. K., Ojurongbe, T. A., Olaosebikan, M. L., Adeboye, N. O., Afolabi, H. A.",venue:"Mathematics and Computational Sciences, 5(1), 1–12.",doi:"https://doi.org/10.30511/mcs.2023.1988295.1107"},
+    {year:2023,type:"journal",title:"Spatial Modelling of the effect of socio-economic indicators on the incidence rate of COVID-19 in Nigeria.",authors:"Adeboye, N. O., Abimbola, V. O., Bashiru, K. A., Ojurongbe, T. A., Afolabi, H. A., Ogunleye, T. A., Osuolola, P. P.",venue:"Statistical Journal of the IAOS, 39, 837–846.",doi:"https://doi.org/10.3233/SJI-230012"},
+    {year:2023,type:"journal",title:"Double-Exponential-X Family of Distributions: Properties and Applications.",authors:"Bashiru, K. A., Ojurongbe, T. A., Adeboye, N. O., Sola, L., Afolabi, H. A.",venue:"Ibn Al-Haitham Journal for Pure and Applied Sciences, 36(3), 437–449.",doi:"https://doi.org/10.30526/36.3.3377"},
+    {year:2023,type:"journal",title:"Time Series Analysis on the Prevalence of Malaria in Osogbo, Nigeria.",authors:"Ojurongbe, T. A., Bello, T. A., Adeboye, N. O., Afolabi, H. A., Aduroja, O. O., Bashiru, K. A.",venue:"Adeleke University Journal of Engineering and Technology, 6(1), 85–95."},
+    {year:2023,type:"journal",title:"Stability Analysis of HIV/AIDS Epidemic Model in the Presence of Vertical Transmission and Treatment.",authors:"Bashiru, K. A. et al., including Adeboye, N. O.",venue:"Uniosun Journal of Engineering and Environmental Sciences, 5(1), 160–168.",doi:"https://doi.org/10.36108/ujees//3202/.50.0141"},
+    {year:2023,type:"journal",title:"Conceptual Analysis of a Fractional Order Epidemic Model of Measles Capturing Logistic Growth using Laplace Adomian Decomposition Method.",authors:"Bashiru, K. A. et al., including Adeboye, N. O.",venue:"Journal of Applied Computer Science & Mathematics, 17(1), 28–34.",doi:"https://doi.org/10.4316/JACSM.202301004"},
+    {year:2023,type:"journal",title:"Modelling the Volatility of African Capital Markets in the Presence of COVID-19 Pandemic: Evidence from the Five Emerging Economies in Africa.",authors:"Adeboye, N. O., Abimbola, V. O., Folorunso, S. O., Akinbo, R. Y.",venue:"Statistics in Transition new series, 24(2), 17–37.",doi:"https://doi.org/10.59170/stattrans-2023-018"},
+    {year:2023,type:"journal",title:"Diagnosing Sexually Transmitted Disease from Some Symptoms Using Machine Learning Models.",authors:"Adeboye, N. O., Bashiru, K. A., Afolabi, H. A., Ojurongbe, T.",venue:"Journal of Statistical Modeling & Analytics, 5(1), 65–80.",doi:"https://jml.um.edu.my/index.php/JOSMA/article/view/38974"},
+    {year:2023,type:"journal",title:"A Geo-Statistical Analysis of the Impact of Ecological and Environmental Risks on Epidemiology in Southwest Nigeria.",authors:"Bashiru, K. A. et al., including Adeboye, N. O.",venue:"Journal of Environmental Health and Sustainable Development, 8(1), 1878–1896."},
+    {year:2023,type:"journal",title:"On COVID-19 Vaccination in Nigeria: An Empirical Study.",authors:"Adesina, O. S., Adedotun, A. F., Adeboye, N. O., Adesina, T. F., Okagbue, H. I., Gboyega, A. F.",venue:"International Journal of Design & Nature and Ecodynamics, 18(1), 219–224."},
+    {year:2023,type:"journal",title:"Fourth Industrial Revolution and Evolution of Data Science: Challenges for Official Statistics.",authors:"Popoola, O. P. & Adeboye, N. O.",venue:"ZBW Leibniz Information Centre for Economics.",doi:"https://www.econstor.eu/bitstream/10419/268717"},
+    {year:2022,type:"journal",title:"Official Statistics: Providing Data Acumen in the Advent and Continuous Presence of COVID-19.",authors:"Adeboye, N. O., Ogunnusi, O. N., Popoola, O. P.",venue:"Statistical Journal of the International Association for Official Statistics, 38, 1129–1141.",doi:"https://doi.org/10.3233/SJI-220009"},
+    {year:2022,type:"journal",title:"Stochastic Model Analysis of the Impact of a Media Campaign on Transmission of COVID-19 Epidemics.",authors:"Bashiru, K. A. et al., including Adeboye, N. O.",venue:"Jambura Journal of Probability and Statistics, 3(2), 179–191.",doi:"https://doi.org/10.34312/jjps.v3i2.15878"},
+    {year:2022,type:"journal",title:"On the Survival Assessment of Diabetic Patients Using Machine Learning Techniques.",authors:"Adeboye, N. O. & Adesanya, K. K.",venue:"International Journal of Research and Innovation in Applied Science, 7(1), 69–75.",doi:"https://doi.org/10.51584/IJRIAS"},
+    {year:2022,type:"journal",title:"Comparison of Active COVID-19 Cases per Population Using Time-Series Models.",authors:"Folorunso, S. O., Banjo, O. O., Ogundepo, E. A. & Adeboye, N. O.",venue:"International Journal of E-Health and Medical Communication, 13(2), 1–21.",doi:"https://doi.org/10.4018/IJEHMC.20220701"},
+    {year:2021,type:"journal",title:"Deep-Learning Modelling of Dynamic Panel Data for African Economic Growth.",authors:"Adeboye, N. O. & Alabi, N. O.",venue:"Journal of Econometrics and Statistics, 2(1), 47–60.",doi:"https://doi.org/10.46791/jes.2022.v02i01.03"},
+    {year:2020,type:"journal",title:"Preventing Shoulder Surfing Attack in Graphical Password Authentication Scheme.",authors:"Hammed, M. & Adeboye, N. O.",venue:"Annals of Computer Science Series Journal, 18(1), 95–98."},
+    {year:2020,type:"journal",title:"Data Science Skills: Building Partnership for Efficient School Curriculum Delivery in Africa.",authors:"Adeboye, N. O., Popoola, O. P., Ogunnusi, O. N.",venue:"Statistical Journal of the IAOS, 36(S1), 49–62.",doi:"https://doi.org/10.3233/SJI-200693"},
+    {year:2020,type:"dataset",title:"Nigeria COVID-19 Data.",authors:"Adeboye, N. O.",venue:"Mendeley Data, V1.",doi:"https://doi.org/10.17632/mgfbc29b9t.1"},
+    {year:2020,type:"journal",title:"An Overview of Cardiovascular Disease Infection: A Comparative Analysis of Boosting Algorithms and Some Single Based Classifiers.",authors:"Adeboye, N. O. & Abimbola, O. V.",venue:"Statistical Journal of the IAOS, 36(4), 1189–1198.",doi:"https://doi.org/10.3233/SJI-190609"},
+    {year:2020,type:"journal",title:"Opportunities, Challenges and Building Partnerships for Official Statistics in the Era of Big Data in Nigeria.",authors:"Popoola, O. P. & Adeboye, N. O.",venue:"International Journal of Research, 7(8), 152–163."},
+    {year:2020,type:"journal",title:"On the Survival Assessment of Asthmatic Patients Using Parametric and Semi-Parametric Survival Models.",authors:"Adeboye, N. O., Ajibode, I. A., Aako, O. L.",venue:"Occupational Diseases and Environmental Medicine, 8(2), 50–63.",doi:"https://doi.org/10.4236/odem.2020.82004"},
+    {year:2020,type:"journal",title:"Malaria Patients in Nigeria: Data Exploration Approach.",authors:"Adeboye, N. O., Abimbola, V. O., Folorunso, S. O.",venue:"Data in Brief, 28, 104997.",doi:"https://doi.org/10.1016/j.dib.2019.104997"},
+    {year:2019,type:"journal",title:"Monte Carlo Estimation of Heteroscedasticity and Periodicity Effects in a Panel Data Regression Model.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"International Journal of Mathematical and Computational Sciences, 13(6), 157–166."},
+    {year:2019,type:"journal",title:"Monte Carlo Estimation of Heterogeneity Effects in a Panel Data Regression Model.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"International Journal of Mathematics and Computation, 30(1), 62–77."},
+    {year:2018,type:"journal",title:"On the Time Domain Analysis of Malaria Morbidity in Nigeria.",authors:"Adeboye, N. O. & Ezekiel, I. D.",venue:"American Journal of Applied Mathematics and Statistics, 6(4), 170–175.",doi:"https://doi.org/10.12691/ajams-6-4-7"},
+    {year:2017,type:"journal",title:"Statistical Effects of Social Media and ICT on the Academic Performance: An Application of Principal Component Analysis.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"African Journal of Science & Nature, 5, 75–82."},
+    {year:2017,type:"journal",title:"On the Investigation of Awareness Level of Family Planning among Rural Dwellers in Nigeria (Principal Component Analysis Approach).",authors:"Ayoola, F. J., Adeboye, N. O. & Balogun, K. B.",venue:"Open Access Library Journal, 4, 1–11.",doi:"https://doi.org/10.4236/oalib.1103762"},
+    {year:2017,type:"journal",title:"Estimating the Heterogeneity Effects in a Panel Data Regression Model.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"Annals. Computer Science Series Journal, 15(1), 149–158."},
+    {year:2017,type:"journal",title:"Estimating the Periodicity Effects in a Panel Data Regression Model.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"Caribbean Journal of Science and Technology, 5, 040–050."},
+    {year:2014,type:"journal",title:"Estimation of the Effect of Multicollinearity on the Standard Error for Regression Coefficients.",authors:"Adeboye, N. O., Fagoyinbo, I. S. & Olatayo, T. O.",venue:"IOSR, 10(4), 16–20."},
+    {year:2014,type:"journal",title:"On Bootstrap Prediction Intervals for Autoregressive Model.",authors:"Olatayo, T. O., Komolafe, A. A. & Adeboye, N. O.",venue:"Australian Journal of Basic and Applied Sciences, 8(6), 385–389."},
+    {year:2014,type:"journal",title:"A Polynomial Regression Model of Monetary Policy Rate in Nigerian Economy.",authors:"Adeboye, N. O., Agunbiade, D. A. & Busari, G. A.",venue:"British Journal of Science, 11(2), 44–51."},
+    {year:2014,type:"journal",title:"Effects of Accounting Information Management on Profitability of Nigerian Banking Industry.",authors:"Agbaje, W. H., Busari, G. A. & Adeboye, N. O.",venue:"International Journal of Humanities, Social Sciences and Education, 1(9), 100–105."},
+    {year:2013,type:"journal",title:"Predicting Population Growth through Births and Deaths Rate in Nigeria.",authors:"Olatayo, T. O. & Adeboye, N. O.",venue:"Journal of Mathematical Theory and Modelling, 3(1), 96–101."},
+    {year:2013,type:"journal",title:"Modelling and Forecasting of Rare Events.",authors:"Adeboye, N. O., Akinbo, R. Y. & Agunbiade, D. A.",venue:"Caribbean Journal of Science and Technology, 1, 98–104."},
+    {year:2013,type:"journal",title:"Impact of Internally Generated Revenue (IGR) on the Growth of Local Governments in Nigeria.",authors:"Busari, G. A., Akinbo, R. Y. & Adeboye, N. O.",venue:"Paripex – Indian Journal of Research, 2(11), 267–268."},
+    {year:2012,type:"journal",title:"Estimation of Heteroscedasticity Effects in a Classical Linear Regression Model of a Cross-Sectional Financial Data.",authors:"Agunbiade, D. A. & Adeboye, N. O.",venue:"Journal of Progress in Applied Mathematics, 4(2), 18–28."},
+    {year:2012,type:"journal",title:"Estimation under Heteroscedasticity: A Comparative Approach Using Cross-Sectional Data.",authors:"Agunbiade, D. A. & Adeboye, N. O.",venue:"Journal of Mathematical Theory and Modelling, 2(11), 1–8."},
+    {year:2022,type:"chapter",title:"Heteroskedasticity in Panel Data: A Big Challenge to Data Filtering.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"In Noise Filtering for Big Data Analytics, De Gruyter, pp. 89–116.",doi:"https://doi.org/10.1515/9783110697216-006"},
+    {year:2021,type:"chapter",title:"Data Classification Model for COVID-19 Pandemic.",authors:"Folorunso, S. O., Awotunde, J. B., Adeboye, N. O. & Matiluko, O. E.",venue:"In Advances in Data Science and Intelligent Data Communication Technologies for COVID-19, Springer, pp. 93–118.",doi:"https://doi.org/10.1007/978-3-030-77302-1_6"},
+    {year:2021,type:"proceedings",title:"Building Robust Collaboration between the Producers and the Users of Official Statistics in Africa.",authors:"Adeboye, N. O., Popoola, O. P., Oyenuga, I. F., Acha, K. C. & Usman, A.",venue:"Proceedings of the 63rd International Statistical Institute World Statistics Congress."},
+    {year:2021,type:"proceedings",title:"Coronavirus Pandemic in Nigeria: An Exploratory Data Analysis of Clustering Pattern of Infections, Recoveries and Deaths.",authors:"Adeboye, N. O., Bashiru, K. A. & Ogunnusi, O. O.",venue:"Proceedings of the 6th International Conference of the Professional Statisticians Society of Nigeria."},
+    {year:2020,type:"proceedings",title:"On the Predictive Ability of Time Domain Modelling of Long Memory Data.",authors:"Adeboye, N. O. & Ogunnusi, O. N.",venue:"Proceedings of the 4th International Conference of the Professional Statisticians Society of Nigeria."},
+    {year:2020,type:"proceedings",title:"Big Data Affluence in Statistics Application: A Comparison of Real Life and Simulated Open Data.",authors:"Adeboye, N. O. & Olayiwola, M. O.",venue:"IASE 2020 Roundtable Conference, Nanjing, China."},
+    {year:2019,type:"proceedings",title:"On Panel Data Regression Modeling in the Presence of Heteroskedasticity and Periodicity.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"Proceedings of the 3rd PSSN International Conference."},
+    {year:2018,type:"proceedings",title:"Comparative Study of ARIMA and SARIMA in Modeling Crime Rate in Nigeria.",authors:"Adeboye, N. O., Omosanya, K. O. & Agunbiade, D. A.",venue:"Proceedings of the 2nd Nigeria Statistical Society International Conference."},
+    {year:2017,type:"proceedings",title:"Fitting of Seasonal ARIMA Model on the Nigerian Stock Exchange Trading Activities.",authors:"Adeboye, N. O. & Fagoyinbo, I. S.",venue:"Proceedings of the 1st Nigeria Statistical Society International Conference."},
+    {year:2017,type:"proceedings",title:"The Behaviour of Long-Term Memory versus Short-Term Memory in Real Exchange Rates with Application of Bootstrapping Technique.",authors:"Nofiu, T., Olatayo, O. O. & Adeboye, N. O.",venue:"2017 NSA National Conference proceedings, 11(2018), 624–636."},
+    {year:2016,type:"proceedings",title:"On the Principal Component Analysis of Students’ Mental Ability in Tertiary Institutions.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"2016 Nigerian Statistical Association National Conference proceedings."},
+    {year:2021,type:"proceedings",title:"The Structure of National Bureau of Statistics and Data Procurement in Nigeria.",authors:"Oyenuga, I. F., Popoola, O. P., Acha, K. C., Adeboye, N. O. & Usman, A.",venue:"Proceedings of the 63rd International Statistical Institute World Statistics Congress."},
+    {year:2021,type:"proceedings",title:"Revolutionizing Official Statistics in Nigeria.",authors:"Acha, K. C., Popoola, O. P., Oyenuga, I. F., Adeboye, N. O. & Usman, A.",venue:"Proceedings of the 63rd International Statistical Institute World Statistics Congress."},
+    {year:2021,type:"proceedings",title:"Official Statistics That Leave No One Behind: An Opportunity for Nigeria.",authors:"Usman, A., Popoola, O. P., Oyenuga, I. F., Acha, K. C. & Adeboye, N. O.",venue:"Proceedings of the 63rd International Statistical Institute World Statistics Congress."},
+    {year:2021,type:"proceedings",title:"The New World Order and the Challenges of Official Statistics in Nigeria.",authors:"Adeboye, N. O.",venue:"Invited Paper Session IPS112, 63rd Virtual World Statistics Congress."},
+    {year:2021,type:"proceedings",title:"Optimization Concept as a Panacea to Profitable Food Sufficiency in a Developing Economy.",authors:"Adeboye, N. O. & Badru, J. O.",venue:"5th National Conference, School of Pure and Applied Science, Federal Polytechnic Ilaro."},
+    {year:2020,type:"proceedings",title:"Cluster Analysis of the Spread of COVID-19 in Nigeria.",authors:"Ajibode, I. A. & Adeboye, N. O.",venue:"2nd International Conference, Federal Polytechnic Ilaro."},
+    {year:2020,type:"proceedings",title:"A Simultaneous Technique Estimation of Keynesian Economic Growth Model.",authors:"Adeboye, N. O.",venue:"International Webinar on Recent Advancements in Mathematical Sciences and its Applications."},
+    {year:2019,type:"proceedings",title:"On Fractional Time Domain Modeling of Nigerian Monthly Rainfall Statistics.",authors:"Adeboye, N. O. & Ogunnusi, N. O.",venue:"4th National Development Conference, Federal Polytechnic Ilaro."},
+    {year:2018,type:"proceedings",title:"A Panel Data Regression Modelling of Corporate Social Responsibility’s Impact on Manufacturing Industry.",authors:"Adeboye, N. O. & Akinbo, R. Y.",venue:"1st International Conference and Exhibition on Technological Innovation and Global Competitiveness."},
+    {year:2018,type:"proceedings",title:"Impact of ICT in Achieving a Competency-Based TVET Education among Polytechnic Students: A Principal Component Analysis Approach.",authors:"Adeboye, N. O.",venue:"40th International Conference of All Polytechnics and Technical Universities in Africa."},
+    {year:2017,type:"proceedings",title:"Statistical Effects of ICT on the Academic Environmental Sustainability: A Principal Component Analysis Approach.",authors:"Adeboye, N. O. & Agunbiade, D. A.",venue:"1st International Conference, Faculty of Science, Olabisi Onabanjo University."},
+    {year:2017,type:"proceedings",title:"Modeling and Forecasting Malaria Morbidity in Nigeria Using ARIMA.",authors:"Adeboye, N. O. & Ogunnusi, N. O.",venue:"National Conference on Science, Technology and Communication, Federal Polytechnic Ilaro."},
+    {year:2016,type:"proceedings",title:"Modelling and Forecasting Mortality Rate Due to Malaria Infection Using ARMA Models.",authors:"Adeboye, N. O.",venue:"ASUP Zone C National Conference."},
+    {year:2015,type:"proceedings",title:"Forecasting of Passengers Traffic in an International Airport Using ARIMA for Planning and National Development.",authors:"Ajibode, I. A., Fagoyinbo, I. S. & Adeboye, N. O.",venue:"3rd National Conference, School of Applied Science, Federal Polytechnic Ilaro."},
+    {year:2013,type:"proceedings",title:"Forecasting Modelling of Rare Events in Nigeria.",authors:"Adeboye, N. O., Ajibode, I. A. & Kolawole, O. O.",venue:"2nd National Conference, School of Applied Science, Federal Polytechnic Ilaro."}
+  ];
+
+  const pubList = document.getElementById("pubList");
+  const pubSearch = document.getElementById("pubSearch");
+  const pubYear = document.getElementById("pubYear");
+  const pubType = document.getElementById("pubType");
+  const pubCount = document.getElementById("pubCount");
+  const pubEmpty = document.getElementById("pubEmpty");
+  const typeLabels = {journal:"Journal article",chapter:"Book chapter",proceedings:"Conference proceeding",dataset:"Research dataset"};
+
+  [...new Set(publications.map(p => p.year))].sort((a,b)=>b-a).forEach(year => {
+    const option = document.createElement("option"); option.value = year; option.textContent = year; pubYear.appendChild(option);
+  });
+
+  function renderPublications() {
+    const query = pubSearch.value.trim().toLowerCase();
+    const year = pubYear.value;
+    const type = pubType.value;
+    const filtered = publications.filter(p => {
+      const searchable = `${p.title} ${p.authors} ${p.venue} ${p.year}`.toLowerCase();
+      return (!query || searchable.includes(query)) && (year === "all" || String(p.year) === year) && (type === "all" || p.type === type);
+    }).sort((a,b)=>b.year-a.year);
+    pubList.innerHTML = filtered.map(p => `
+      <article class="pub-item">
+        <span class="pub-type">${typeLabels[p.type]}</span>
+        <h3>${p.title}</h3>
+        <p>${p.authors} (${p.year}). ${p.venue} ${p.doi ? ` <a href="${p.doi}" target="_blank" rel="noopener noreferrer">View source ↗</a>` : ""}</p>
+      </article>`).join("");
+    pubCount.textContent = `Showing ${filtered.length} of ${publications.length} listed scholarly outputs`;
+    pubEmpty.style.display = filtered.length ? "none" : "block";
+  }
+  [pubSearch,pubYear,pubType].forEach(el => el.addEventListener("input", renderPublications));
+  renderPublications();
+</script>
+</body>
+</html>
